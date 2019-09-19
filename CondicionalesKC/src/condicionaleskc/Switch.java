@@ -11,6 +11,7 @@ public class Switch {
         Scanner input = new Scanner (System.in);
   
 int Nestudiantes = 0;
+int x= 0;
 int Nota = 0;
 
         System.out.println("===REGISTRO DE CALIFICACIONES===");
@@ -18,7 +19,9 @@ int Nota = 0;
         System.out.println("Ingresa el número de estudiantes: ");
         Nestudiantes = input.nextInt();
         
-        System.out.println("Ingresa la nota del estudiante: ");
+        for(x = 1; x<=Nestudiantes; x++){
+          
+            System.out.println("Ingresa la nota del estudiante N°" + x + ": ");
         Nota = input.nextInt();
         
         switch(Nota){
@@ -43,7 +46,11 @@ int Nota = 0;
             default:
                 System.out.println("Ingresa una calificación válida.");
                 break;
+        }   
+        
         }
         
     }
 }
+
+
