@@ -34,7 +34,7 @@ class Caja_Registradora {
         System.out.println("Kit Geométrico                       05                     4.200");
         
         System.out.println("Deseas comprar alguno de nuestros productos..? (Si/No)");
-        
+        respuesta = input.next();
         while (respuesta.equals("Si")){
             
             System.out.println("Por favor, ingresa el código del producto que deseas comprar: ");
